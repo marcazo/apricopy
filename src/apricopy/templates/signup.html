@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section id="main-slider" class="carousel">
+    <div id="reg_container">
+
+        <div id="reg_forms">
+            <fieldset>
+               <legend>Register Below</legend>
+               <form action="." method="post">
+
+                {% csrf_token %}
+                {{ form.as_p }}
+               
+            </fieldset>
+
+        </div>
+            <fieldset>
+                 <legend></legend>
+                <input type="Submit" value=" Submit " class="btn btn-block btn-lg btn-success" >
+            </fieldset>
+                    </form>
+
+        </div>
+
+</section>
+{% endblock %}
